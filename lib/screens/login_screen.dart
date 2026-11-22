@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'forgot_password_screen.dart';
+import 'register_screen.dart';
 import '../data/mock_data.dart';
 import '../models/app_user.dart';
 import '../consts/app_colors.dart';
@@ -103,7 +105,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => const ForgotPasswordScreen(),
+                        ),
+                      );
+                    },
                     child: const Text('Zaboravili ste lozinku?'),
                   ),
                 ),
@@ -115,7 +123,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(height: 12),
                 Center(
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => const RegisterScreen(),
+                        ),
+                      );
+                    },
                     child: const Text('Nemate nalog? Registrujte se'),
                   ),
                 ),

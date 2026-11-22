@@ -10,6 +10,7 @@ class AppColors {
   static const Color textMuted = Color(0xFF6B8A93);
   static const Color border = Color(0xFFE0EDED);
   static const Color success = Color(0xFF34C38F);
+  static const Color successSoft = Color(0x1F34C38F);
   static const Color warning = Color(0xFFFF6B5E);
   static const Color primarySoft = Color(0x1A0E7C86);
   static const Color white70 = Color(0xB3FFFFFF);
