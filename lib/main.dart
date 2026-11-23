@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medicare/screens/main_shell.dart';
 
 import 'consts/app_theme.dart';
 import 'screens/onboarding_screen.dart';
@@ -16,7 +17,7 @@ class MediCareApp extends StatelessWidget {
       title: 'MediCare',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
-      home: const OnboardingScreen(),
+      home: const MainShell(),
     );
   }
 }

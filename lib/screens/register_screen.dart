@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medicare/screens/main_shell.dart';
 
 import '../consts/app_colors.dart';
 import '../widgets/app_text_field.dart';
@@ -44,7 +45,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Nalog je napravljen. Sada se prijavite.')),
     );
-    Navigator.of(context).pop();
+    Navigator.of(context).pushAndRemoveUntil(
+      MaterialPageRoute(builder: (_) => const MainShell()),
+      (route) => false,
+    );
   }
 
   @override
