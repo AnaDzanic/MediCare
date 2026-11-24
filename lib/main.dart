@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medicare/screens/doctors_screen.dart';
 import 'package:medicare/screens/main_shell.dart';
 
 import 'consts/app_theme.dart';
@@ -17,7 +18,7 @@ class MediCareApp extends StatelessWidget {
       title: 'MediCare',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
-      home: const MainShell(),
+      home: const DoctorsScreen(),
     );
   }
 }

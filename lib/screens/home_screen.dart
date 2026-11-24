@@ -11,6 +11,7 @@ import '../widgets/gradient_header.dart';
 import '../widgets/progress_ring.dart';
 import '../widgets/section_title.dart';
 import 'profile_screen.dart';
+import 'doctor_profile_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   final void Function(int) onGoTo;
@@ -136,7 +137,19 @@ class HomeScreen extends StatelessWidget {
                 ),
                 ...MockData.doctors
                     .take(2)
-                    .map((doctor) => DoctorCard(doctor: doctor, onTap: () {})),
+                    .map(
+                      (doctor) => DoctorCard(
+                        doctor: doctor,
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) =>
+                                  DoctorProfileScreen(doctor: doctor),
+                            ),
+                          );
+                        },
+                      ),
+                    ),
               ],
             ),
           ),
