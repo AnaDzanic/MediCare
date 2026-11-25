@@ -15,6 +15,7 @@ class AppColors {
   static const Color primarySoft = Color(0x1A0E7C86);
   static const Color white70 = Color(0xB3FFFFFF);
   static const Color white20 = Color(0x33FFFFFF);
+  static const Color warningSoft = Color(0x1AFF6B5E);
   static const LinearGradient headerGradient = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
